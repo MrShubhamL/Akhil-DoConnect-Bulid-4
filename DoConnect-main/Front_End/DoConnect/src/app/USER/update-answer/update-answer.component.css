@@ -1,0 +1,8 @@
+.w100{
+    width: 100%;
+}
+
+.bg-transparent{
+    background: linear-gradient(rgba(0, 0, 0, 0.707),rgba(0, 0, 0, 0.712));
+    color: white !important;
+}

@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+            <mat-card class="mt-4 bg-transparent">
+                <mat-card-content>
+                    <p class="text-white"><strong>Question.</strong> {{question.question}}</p>
+                    <form class="row g-3" (ngSubmit)="formSubmit()" >
+                        <div class="col-12 col-lg-12">
+                            <textarea class="form-control" style="background: transparent; color: white;" rows="20" cols="20" value="{{myAns.answer}}"  [(ngModel)]="answer.answer" name="answer" 
+                             placeholder="Start to write your answer.."></textarea>
+                        </div>
+                        <div class="col-12 col-lg-12">
+                            <button class="btn btn-outline-primary" type="submit">Update Answer</button>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
